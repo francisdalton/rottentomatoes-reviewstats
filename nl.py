@@ -40,7 +40,6 @@ def score_sentences(sentences, important_words):
                 word_idxs.append(sentence.index(w))
         word_idxs.sort()
         if len(word_idxs) > 0:
-            word_idxs.sort()
             clusters = []
             cluster = [word_idxs[0]]
             for i in range(1, len(word_idxs)):
